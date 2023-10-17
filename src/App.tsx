@@ -13,9 +13,9 @@ function App() {
       <NavBar />
       <Container className="mb-4">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/store" element={<Store />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/react-zustand-shoppingcart" element={<Home />} />
+          <Route path="/react-zustand-shoppingcart/store" element={<Store />} />
+          <Route path="/react-zustand-shoppingcart/about" element={<About />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Container>
