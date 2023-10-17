@@ -5,6 +5,7 @@ import Store from './pages/Store';
 import About from './pages/About';
 import NavBar from './components/NavBar';
 import Cart from './components/Cart';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Container>
-      <Cart />;
+      <Cart />
     </>
   );
 }
